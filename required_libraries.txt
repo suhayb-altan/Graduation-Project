@@ -1,0 +1,213 @@
+# Required Libraries for Safety Helmet Detection Project
+# Google Colab Installation Commands
+
+# =============================================================================
+# 1. CORE DEPENDENCIES
+# =============================================================================
+
+# Install Ultralytics (YOLOv8)
+!pip install ultralytics
+
+# Install OpenCV for computer vision
+!pip install opencv-python
+
+# Install PyTorch (usually comes with ultralytics, but explicit installation)
+!pip install torch torchvision torchaudio
+
+# =============================================================================
+# 2. DATA PROCESSING & VISUALIZATION
+# =============================================================================
+
+# Install NumPy for numerical operations
+!pip install numpy
+
+# Install Pandas for data manipulation
+!pip install pandas
+
+# Install Matplotlib for plotting
+!pip install matplotlib
+
+# Install Seaborn for statistical visualizations
+!pip install seaborn
+
+# Install Pillow for image processing
+!pip install Pillow
+
+# =============================================================================
+# 3. CONFIGURATION & UTILITIES
+# =============================================================================
+
+# Install PyYAML for configuration files
+!pip install PyYAML
+
+# Install tqdm for progress bars
+!pip install tqdm
+
+# Install requests for downloading models
+!pip install requests
+
+# =============================================================================
+# 4. OPTIONAL BUT RECOMMENDED
+# =============================================================================
+
+# Install IPython for better notebook experience
+!pip install ipython
+
+# Install jupyter for notebook functionality
+!pip install jupyter
+
+# Install scikit-learn for metrics (optional)
+!pip install scikit-learn
+
+# =============================================================================
+# 5. GPU SUPPORT (if available)
+# =============================================================================
+
+# For CUDA support (if you have GPU)
+# !pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+
+# =============================================================================
+# 6. VERIFICATION COMMANDS
+# =============================================================================
+
+# Check if ultralytics is installed
+!python -c "import ultralytics; print('✅ Ultralytics installed successfully')"
+
+# Check if OpenCV is installed
+!python -c "import cv2; print('✅ OpenCV installed successfully')"
+
+# Check if PyTorch is installed
+!python -c "import torch; print('✅ PyTorch installed successfully')"
+
+# Check GPU availability
+!python -c "import torch; print(f'GPU available: {torch.cuda.is_available()}')"
+
+# =============================================================================
+# 7. COMPLETE INSTALLATION SCRIPT
+# =============================================================================
+
+# Copy and paste this entire block into a Colab cell:
+
+"""
+# Complete Installation Script for Safety Helmet Detection
+
+# Install all required packages
+!pip install ultralytics
+!pip install opencv-python
+!pip install torch torchvision torchaudio
+!pip install numpy pandas matplotlib seaborn Pillow
+!pip install PyYAML tqdm requests
+!pip install ipython jupyter scikit-learn
+
+# Verify installations
+!python -c "import ultralytics; print('✅ Ultralytics installed')"
+!python -c "import cv2; print('✅ OpenCV installed')"
+!python -c "import torch; print('✅ PyTorch installed')"
+!python -c "import torch; print(f'GPU available: {torch.cuda.is_available()}')"
+
+print("🎉 All dependencies installed successfully!")
+"""
+
+# =============================================================================
+# 8. TROUBLESHOOTING
+# =============================================================================
+
+# If you get import errors, try these solutions:
+
+# Solution 1: Restart runtime after installation
+# Runtime -> Restart runtime
+
+# Solution 2: Force reinstall
+# !pip install --force-reinstall ultralytics
+
+# Solution 3: Install specific version
+# !pip install ultralytics==8.0.196
+
+# Solution 4: Clear cache and reinstall
+# !pip cache purge
+# !pip install ultralytics
+
+# =============================================================================
+# 9. IMPORT STATEMENTS FOR NOTEBOOK
+# =============================================================================
+
+# Copy these import statements into your notebook:
+
+"""
+# Import required libraries
+import os
+import sys
+import yaml
+import shutil
+from pathlib import Path
+import matplotlib.pyplot as plt
+import seaborn as sns
+from ultralytics import YOLO
+import cv2
+import numpy as np
+import torch
+import pandas as pd
+from PIL import Image
+import requests
+from tqdm import tqdm
+
+print("✅ All libraries imported successfully!")
+"""
+
+# =============================================================================
+# 10. VERSION COMPATIBILITY
+# =============================================================================
+
+# Recommended versions for compatibility:
+# ultralytics >= 8.0.0
+# opencv-python >= 4.5.0
+# torch >= 1.9.0
+# numpy >= 1.21.0
+# matplotlib >= 3.3.0
+# seaborn >= 0.11.0
+# Pillow >= 8.0.0
+# PyYAML >= 5.4.0
+
+# =============================================================================
+# 11. GOOGLE COLAB SPECIFIC SETTINGS
+# =============================================================================
+
+# Enable GPU in Colab:
+# Runtime -> Change runtime type -> GPU
+
+# Mount Google Drive (if needed):
+# from google.colab import drive
+# drive.mount('/content/drive')
+
+# =============================================================================
+# 12. QUICK START COMMANDS
+# =============================================================================
+
+# For immediate use, run these commands in order:
+
+"""
+# 1. Install dependencies
+!pip install ultralytics opencv-python torch torchvision torchaudio numpy pandas matplotlib seaborn Pillow PyYAML tqdm requests
+
+# 2. Restart runtime
+# Runtime -> Restart runtime
+
+# 3. Import libraries
+import os
+import sys
+import yaml
+import shutil
+from pathlib import Path
+import matplotlib.pyplot as plt
+import seaborn as sns
+from ultralytics import YOLO
+import cv2
+import numpy as np
+import torch
+import pandas as pd
+from PIL import Image
+import requests
+from tqdm import tqdm
+
+print("🎉 Ready to start training!")
+""" 
